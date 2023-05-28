@@ -10,7 +10,7 @@ public class PostmanEchoTest {
     void shouldPostmanEchoTest() {
         // Given - When - Then
         String userData = "{\"id\":1,\"name\":\"Elias\",\"job\":\"Engineer\"}";
-        String userErrorData = "{\"id\":1,\"name\":\"Tom\",\"job\":\"Engineer\"}";
+        String userErrorData = "{\"id\":1,\"name\":\"Elias\",\"job\":\"Artist\"}";
 
         given()
                 .baseUri("https://postman-echo.com")
