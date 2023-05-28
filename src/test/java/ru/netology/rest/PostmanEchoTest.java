@@ -10,6 +10,7 @@ public class PostmanEchoTest {
     void shouldPostmanEchoTest() {
         // Given - When - Then
         String userData = "{\"id\":1,\"name\":\"Elias\",\"job\":\"Engineer\"}";
+        String userErrorData = "{\"Ud\":2,\"name\":\"Elias\",\"job\":\"Engineer\"}";
 
         given()
                 .baseUri("https://postman-echo.com")
@@ -18,6 +19,6 @@ public class PostmanEchoTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("data", equalTo(userData));
+                .body("data", equalTo(userErrorData));
     }
 }
