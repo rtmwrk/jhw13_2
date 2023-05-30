@@ -6,6 +6,7 @@ import static org.hamcrest.Matchers.*;
 
 public class PostmanEchoTest {
 
+    // Тест поля "data" в ответе сервиса
     @Test
     void shouldPostmanEchoTest() {
         // Given - When - Then
